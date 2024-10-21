@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+
+<!--Encabezado-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evidencia 2</title>
+
+    <!--Icono de pagina-->
+    <link rel="icon" type="image/x-icon" href="img/js_icono.png">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="js/ejercicios.js" defer></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<!--Cuerpo de la pagina-->
+
+<body>
+    <!--Encabezado de pagina-->
+    <header class="p-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <!--Columna vacia-->
+                </div>
+
+                <!--Titulo de la pagina-->
+                <div class="col-md-9">
+                    <h1><i class="bi bi-laptop"></i><a href="#" class="text-dark text-decoration-none"><b style="color: black;"> Evidencia 2 </b></a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <div class="container-fluid contenedor">
+        <br>
+        <div class="row">
+
+            <!-- Menú izquierda-->
+            <div class="col-md-3">
+                <nav>
+                    <div class="list-group">
+
+                        <a href="index.html" class="menu list-group-item list-group-item-action">Página informativa
+                            JavaScript
+                            <i class="bi bi-filetype-js"></i></a>
+
+                        <a href="#" id="activo" class="menu list-group-item list-group-item-action active">Ejercicios con JavaScript
+                            <i class="bi bi-list-check"></i></a>
+                    </div>
+                </nav>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="iconoMenu bi bi-caret-up-square-fill" onclick="ocultarIndice()" id="btnOcultar"></i>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="iconoMenu bi bi-caret-down-square-fill" onclick="desplegarIndice()" id="btnMostrar"></i>
+
+                <nav>
+                    <div class="list-group">
+
+                        <a href="#ejercicio1" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-1-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio2" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-2-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio3" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-3-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio4" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-4-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio5" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-5-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio6" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-6-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio7" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-7-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio8" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-8-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio9" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-9-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio10" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-1-circle-fill"></i><i class="bi bi-0-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio11" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-1-circle-fill"></i><i class="bi bi-1-circle-fill"></i>
+                        </a>
+                        <a href="#ejercicio12" class="menu list-group-item list-group-item-action indiceEj">Ejercicio &nbsp;&nbsp;&nbsp;<i class="bi bi-1-circle-fill"></i><i class="bi bi-2-circle-fill"></i>
+                        </a>
+
+                    </div>
+                </nav>
+            </div>
+
+
+            <!-- Artículo Principal -->
+            <main class="col-md-9">
+                <article class="bg-white p-4 border rounded">
+
+                    <!--------------------------------------------------------------------------------------------------------->
+                    <!--CONTENIDO DE LA PAGINA-->
+                    <h1 id="ejercicio1">Ejercicios con JavaScript</h1>
+                    <hr>
+                    <br>
+
+                    <!--Carta ejercicio #1-->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Ejercicio #1. Saludo al usuario</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><label for="txtNombre">Nombre:</label></td>
+                                                <td><input id="txtNombre" type="text" maxlength="25"
+                                                        placeholder="Ingrese su nombre"></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><br><button onclick="mostrarSaludo()">Mostrar saludo</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio2">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- Carta ejercicio #2 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Ejercicio #2. Cálculo del costo final de un producto</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><label for="txtCantidadCompra">Cantidad Compra:</label></td>
+                                                <td><input id="txtCantidadCompra" type="number" maxlength="10"
+                                                        placeholder="Ingrese cantidad"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="ddlUnidadEntrada">Unidad Entrada:</label></td>
+                                                <td>
+                                                    <select id="ddlUnidadEntrada">
+                                                        <option value="0">Seleccione</option>
+                                                        <option value="1">Caja</option>
+                                                        <option value="2">Paquete</option>
+                                                        <option value="3">Bolsa</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="txtCantidadUnidad">Cantidad por Unidad:</label></td>
+                                                <td><input id="txtCantidadUnidad" type="number" maxlength="10"
+                                                        placeholder="Ingrese cantidad"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="ddlUnidadSalida">Unidad Salida:</label></td>
+                                                <td>
+                                                    <select id="ddlUnidadSalida">
+                                                        <option value="0">Seleccione</option>
+                                                        <option value="1">Caja</option>
+                                                        <option value="2">Paquete</option>
+                                                        <option value="3">Bolsa</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="txtCostoUnitario">Costo Unitario:</label></td>
+                                                <td><input id="txtCostoUnitario" type="number" maxlength="10"
+                                                        placeholder="Ingrese costo"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="txtDescuento">Descuento:</label></td>
+                                                <td><input id="txtDescuento" type="number" maxlength="3"
+                                                        placeholder="Ingrese descuento"></td>
+                                                <td> &nbsp;&nbsp; <input id="chkAplicarDescuento"
+                                                        type="checkbox">Aplicar</td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="txtCostoFinal">Costo Final:</label></td>
+                                                <td><input id="txtCostoFinal" type="number" maxlength="10" disabled>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><br><button onclick="calcularCostoFinal()">Calcular costo
+                                                        final</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio3">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- Carta ejercicio #3 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Ejercicio #3. Operaciones con dos numeros</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-5">
+                                    <table>
+                                        <tr>
+                                            <td><label for="ddlOperacion">Seleccione operación:
+                                                    &nbsp;&nbsp;&nbsp;</label></td>
+                                            <td>
+                                                <select id="ddlOperacion">
+                                                    <option value="seleccione">Seleccione</option>
+                                                    <option value="suma">Suma</option>
+                                                    <option value="resta">Resta</option>
+                                                    <option value="multiplicacion">Multiplicación</option>
+                                                    <option value="dividision">División</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <br>
+                                            <td><button onclick="calcularOperacion()">Calcular operación</button></td>
+                                            <br>
+                                            <td><b>&nbsp;&nbsp; <label id="lblResultadoOperacion"></label></b></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio4">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Carta ejercicio #4-->
+                    <div class="card" id="ejercicio4">
+                        <div class="card-header">
+                            <h3>Ejercicio #4. Tipo de triángulo</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-5"></div>
+                                <div class="col-md-4">
+                                    <table>
+                                        <tr>
+                                            <td><button onclick="determinarTriangulo()">Determinar</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><b><label id="lblResultadoTriangulo"></label></b></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio5">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Carta ejercicio #5-->
+                    <div class="card" id="ejercicio5">
+                        <div class="card-header">
+                            <h3>Ejercicio #5. Conversor de monedas</h3>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="titilo5">Tasa de conversión</h3>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5">
+                                    <table border="1">
+                                        <tbody>
+                                            <tr>
+                                                <th>Moneda</th>
+                                                <th>USD</th>
+                                                <th>EUR</th>
+                                                <th>MXN</th>
+                                                <th>JPY</th>
+                                            </tr>
+                                            <tr>
+                                                <td>USD</td>
+                                                <td>1</td>
+                                                <td>0.80</td>
+                                                <td>18.00</td>
+                                                <td>105.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>EUR</td>
+                                                <td>1.25</td>
+                                                <td>1</td>
+                                                <td>22.00</td>
+                                                <td>125.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MXN</td>
+                                                <td>0.055</td>
+                                                <td>0.045</td>
+                                                <td>1</td>
+                                                <td>5.40</td>
+                                            </tr>
+                                            <tr>
+                                                <td>JPY</td>
+                                                <td>0.0095</td>
+                                                <td>0.0080</td>
+                                                <td>0.185</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <br>
+
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <legend>Área de conversión</legend>
+                                        <label for="ddlMonedaOrigen">Moneda de origen:</label>
+                                        <select id="ddlMonedaOrigen">
+                                            <option value="USD">Dólar USD</option>
+                                            <option value="EUR">Euro EUR</option>
+                                            <option value="MXN">Peso Mexicano MXN</option>
+                                            <option value="JPY">Yen Japonés JPY</option>
+                                        </select>
+                                        <br>
+                                        <br>
+
+                                        <label for="txtMonto">Monto:</label>
+                                        <input id="txtMonto" type="number" maxlength="10" placeholder="Ingrese monto">
+                                        <br>
+                                        <br>
+
+                                        <label for="ddlMonedaDestino">Moneda de destino:</label>
+                                        <select id="ddlMonedaDestino">
+                                            <option value="USD">Dólar USD</option>
+                                            <option value="EUR">Euro EUR</option>
+                                            <option value="MXN">Peso Mexicano MXN</option>
+                                            <option value="JPY">Yen Japonés JPY</option>
+                                        </select>
+                                        <br>
+                                        <br>
+
+                                        <button onclick="convertirMoneda()">Convertir moneda</button>
+                                        <br>
+                                        <b><label id="lblResultadoConversion"></label></b>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio6">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Carta ejercicio #6-->
+                    <div class="card" id="ejercicio6">
+                        <div class="card-header">
+                            <h3>Ejercicio #6. Calificación de una materia</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <p>Ingrese la calificación final de cada rúbro en número entero</p>
+                                    <p><b>NOTA: El resultado debe ser número entero únicamente</b></p>
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><b>(30%)</b> Examen parcial:</td>
+                                                <td><input id="txtExamenParcial" type="number" maxlength="3"
+                                                        placeholder="Ingrese calificación"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>(30%)</b> Examen final:</td>
+                                                <td><input id="txtExamenFinal" type="number" maxlength="3"
+                                                        placeholder="Ingrese calificación"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>(20%)</b> Portafolio:</td>
+                                                <td><input id="txtPortafolio" type="number" maxlength="3"
+                                                        placeholder="Ingrese calificación"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>(20%)</b> PIA:</td>
+                                                <td><input id="txtPIA" type="number" maxlength="3"
+                                                        placeholder="Ingrese calificación"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button onclick="calcularCalificacion()">Obtener
+                                                        calificación</button>
+                                                </td>
+                                                <td><b><label id="lblResultadoCalificacion"></label></b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio7">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Carta ejercicio #7-->
+                    <div class="card" id="ejercicio7">
+                        <div class="card-header">
+                            <h3>Ejercicio #7. Contador de clics</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <button onclick="contarClics()">Haga clic</button>
+                                    <br>
+                                    <br>
+                                    <b><label id="totalClics"></label></b>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio8">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Carta ejercicio #8-->
+                    <div class="card" id="ejercicio7">
+                        <div class="card-header">
+                            <h3>Ejercicio #8. Tabla de operaciones</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <label for="tipoOperacion">Tipo de operación:</label>
+                                <select id="tipoOperacion">
+                                <option value="suma">Suma</option>
+                                <option value="resta">Resta</option>
+                                 <option value="multiplicacion">Multiplicación</option>
+                                 <option value="division">División</option>
+                                </select>
+                                <br><br>
+                                <label for="cantidad">Cantidad de operaciones:</label>
+                                <input type="number" id="cantidad" value="5" min="1">
+                                <br><br>
+                                <button onclick="generarTabla()">Generar Tabla</button>
+                                <br><br>
+                                <div id="tablaContainer"></div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>                   
+                    <br id="ejercicio9">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Carta ejercicio #9-->
+                    <div class="card" id="ejercicio7">
+                        <div class="card-header">
+                            <h3>Ejercicio #9. Conversion decimal a binario</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <label for="numeroDecimal">Ingresa un número decimal:</label>
+                                    <input type="number" id="numeroDecimal" placeholder="Ej. 10">
+                                    <br><br>
+                                        <button onclick="convertirABinario()">Convertir a Binario</button>
+                                    <br><br>
+                                        <p>Resultado en binario: <span id="resultadoBinario"></span></p> 
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio10">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Carta ejercicio #10-->
+                    <div class="card" id="ejercicio7">
+                        <div class="card-header">
+                            <h3>Ejercicio #10. Juego adivinanza</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <div class="mi-carta">
+                                        <h2>Adivina el Número</h2>
+                                        <p>He generado un número entre 1 y 100. ¿Puedes adivinar cuál es?</p>
+                                    
+                                        <input type="number" id="numeroUsuario" placeholder="Ingresa un número" min="1" max="100">
+                                        <br><br>
+                                    
+                                        <button type="button" onclick="adivinarNumero()">Adivinar</button>
+                                        <button type="button" onclick="reiniciarJuego()">Reiniciar Juego</button>
+                                    
+                                        <p class="mi-mensaje" id="miMensaje"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio11">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Carta ejercicio #11-->
+                    <div class="card" id="ejercicio7">
+                        <div class="card-header">
+                            <h3>Ejercicio #11. Simulacion de examen</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <!-- Pregunta 1 -->
+                                    <div class="pregunta">
+                                        <h3>1. ¿Cuál es la capital de Francia?</h3>
+                                        <label class="respuesta"><input type="radio" name="pregunta1" id="respuestaExamen1"> Londres</label>
+                                        <label class="respuesta"><input type="radio" name="pregunta1" id="respuestaExamen2"> París</label>
+                                        <label class="respuesta"><input type="radio" name="pregunta1" id="respuestaExamen3"> Berlín</label>
+                                    </div>
+                                    <!-- Pregunta 2 -->
+                                    <div class="pregunta">
+                                        <h3>2. ¿Cuánto es 2 + 2?</h3>
+                                        <label class="respuesta"><input type="radio" name="pregunta2" id="respuestaExamen1"> 4</label>
+                                        <label class="respuesta"><input type="radio" name="pregunta2" id="respuestaExamen2"> 5</label>
+                                        <label class="respuesta"><input type="radio" name="pregunta2" id="respuestaExamen3"> 6</label>
+                                    </div>
+                                    <!-- Pregunta 3 -->
+                                    <div class="pregunta">
+                                        <h3>3. ¿Cuál es el color del cielo en un día soleado?</h3>
+                                        <label class="respuesta"><input type="radio" name="pregunta3" id="respuestaExamen1"> Verde</label>
+                                        <label class="respuesta"><input type="radio" name="pregunta3" id="respuestaExamen2"> Rojo</label>
+                                        <label class="respuesta"><input type="radio" name="pregunta3" id="respuestaExamen3"> Azul</label>
+                                    </div>
+                                    <!-- Botón para verificar respuestas -->
+                                    <button type="button" onclick="verificarExamenUsuario()">Enviar Examen</button>
+                                    <!-- Resultado -->
+                                    <p id="resultadoExamen" class="resultado"></p>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br id="ejercicio12">
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Carta ejercicio #12-->
+                    <div class="card" id="ejercicio7">
+                        <div class="card-header">
+                            <h3>Ejercicio #12. Validacion de formulario</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <form onsubmit="return validarFormulario()">
+                                        <!-- Campo de nombre -->
+                                        <div>
+                                            <label for="nombre">Nombre:</label>
+                                            <input type="text" id="nombre" name="nombre" required>
+                                            <span id="errorNombre" class="error"></span>
+                                        </div>
+                                    
+                                        <!-- Campo de email -->
+                                        <div>
+                                            <label for="email">Correo:</label>
+                                            <input type="email" id="email" name="email" required>
+                                            <span id="errorEmail" class="error"></span>
+                                        </div>
+                                    
+                                        <!-- Campo de contraseña -->
+                                        <div>
+                                            <label for="password">Contraseña:</label>
+                                            <input type="password" id="password" name="password" required>
+                                            <span id="errorPassword" class="error"></span>
+                                        </div>
+                                    
+                                        <!-- Botón de enviar -->
+                                        <div>
+                                            <button type="submit">Enviar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <!--FIN DEL CONTENIDO DE LA PAGINA-->
+                    <!-------------------------------------------------------------------------------------------------------->
+
+                </article>
+            </main>
+        </div>
+        <br>
+    </div>
+
+    <!--Pie de pagina-->
+    <footer>
+        <div class="container ">
+            <br>
+            <b>
+                <p> Realizado por:</p>
+                <p> Jesús Jahaziel Gutiérrez Alfaro #2022202</p>
+                <p> Lesly Nohemi Álvarez Peña #2018663</p>
+                <p> Diego Prieto Cázares #2011781</p>
+            </b>
+        </div>
+        <br>
+    </footer>
+</body>
+
+</html>

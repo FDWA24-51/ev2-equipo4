@@ -1,0 +1,148 @@
+.contenedor {
+	background-color: #6998AB;
+    margin-top: 80px;
+}
+
+footer {
+	text-align: center;
+	margin-top: 50 px;
+}
+
+header, footer {
+	background-color: #406882;
+}
+
+h1 {
+	font-family: Cambria;
+	font-size: 20px;
+}
+
+img {
+	border-radius: 2% !important;
+}
+
+#img-js {
+	height: 350px;
+	width: 700px;
+}
+
+h1, h3, h4 {
+	font-weight: bold;
+}
+
+.contenedor-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.menu {
+	background-color: #406882 !important;
+}
+
+#activo {
+	border: 5px ridge;
+	border-color: #FFFFFF !important;
+	color: #FFFFFF !important;
+}
+
+.iconoMenu {
+    color: #FFFFFF;
+}
+
+.indiceEj {
+    display: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	padding: 20px;
+}
+
+body {
+	margin-top: 100px; 
+}
+
+.card {
+    text-align: center;
+	border: 2px solid !important;
+	border-color: black;
+}
+
+.card-header {
+    background-color: #ADCBD7 !important;
+	border-bottom: 2px solid !important;
+	border-color: black;
+}
+
+.card-body {
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.titulo5 {
+	text-align: center;
+}
+
+.col-md-4 {
+	align-content: center;
+}
+
+h1, h2, h3, p, a {
+	color: black !important;
+}
+
+label {
+	color: black !important;
+}
+
+#tablaContainer {
+	width: 20%;
+	margin: auto;
+
+}
+
+.mi-body {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
+.mi-carta {
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+}
+.mi-mensaje {
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.pregunta {
+	margin-bottom: 20px;
+}
+.respuesta {
+	display: block;
+	margin: 5px 0;
+}
+.correcta {
+	background-color: lightgreen;
+}
+.incorrecta {
+	background-color: lightcoral;
+}
+.resultado {
+	font-weight: bold;
+	margin-top: 20px;
+}
+.error {
+	color: red;
+}
+.exito {
+	color: green;
+}
